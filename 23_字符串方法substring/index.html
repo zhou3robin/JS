@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "itbaizhan";
+        // 参数1：开始位置
+        // 参数2：结束位置（不包含）
+        var result = name.substring(2,9); // baizhan
+        console.log(result);
+        
+        // 第二个参数不写，默认刀原字符串的结尾
+        var result2 = name.substring(2); // baizhan
+        console.log(result2);
+
+        // 如果参数2大于参数1，substring会自动更换两个参数的位置
+        var result3 = name.substring(9,2);
+        console.log(result3);
+
+        // 如果参数中有负数，会自动将参数转成0
+        var result4 = name.substring(-3); // itbaizhan
+        console.log(result4);
+        var result5 = name.substring(2,-3); // it
+        console.log(result5);
+    </script>
+</body>
+</html>

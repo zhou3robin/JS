@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .root{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="root" id="root">
+        <div class="box" id="box">内部</div>
+    </div>
+    <script>
+        // mouseenter\mouseleave 和 mouseover\mouseout 区别
+
+
+        var root = document.getElementById("root");
+        var box = document.getElementById("box");
+
+        // mouseenter: 鼠标进入一个节点时触发，进入子节点不会触发这个事件
+        // mouseover: 鼠标进入一个节点时触发，进入子节点会再一次触发这个事件
+        root.onmouseover = function(){
+            console.log("进入了");
+        }
+    </script>
+</body>
+</html>

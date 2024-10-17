@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // substr方法第一个参数是子字符串的开始位置（从0开始），第二个参数是字符串的长度
+        var name = "itbaizhan";
+        var result1 = name.substr(2,7);
+        console.log(result1);
+        
+        // 如果省略第二个参数，则表示一直到结束
+        var result2 = name.substr(2);
+        console.log(result2);
+        
+        // 如果第一个参数是负数，表示倒数计算的字符位置。如果第二个参数是负数，将被自动转为0，因此返回空字符串
+        var result3 = name.substr(-7); //baizhan
+        console.log(result3);
+        
+        var result4 = name.substr(4,-1);
+        console.log(result4);
+    </script>
+</body>
+</html>

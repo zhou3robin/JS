@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // concat方法用于多个数组的合并。它将新数组的成员，添加到原数组成员的后部，然后返回一个新数组，原数组不变。
+        var arr1 = ["尚学堂","百战生许愿"];
+        var arr2 = ["sxt","itbaizhan"];
+        var arr3 = ["java","php"]
+
+        console.log(typeof(arr1 + arr2));
+        
+        console.log(arr1.concat(arr2));
+        console.log(arr1.concat(arr2,arr3));
+
+        // 除了数组作为参数，concat也接受其他类型的值作为参数，添加到目标数组尾部
+        var arr4 = [19];
+        console.log(arr4.concat(20,30,40));
+    </script>
+</body>
+</html>

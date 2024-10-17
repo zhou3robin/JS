@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // join方法以指定参数作为分隔符，将所有数组成员连接为一个字符串返回。不过不提供参数，默认用逗号分隔
+        var arr = [1,2,3,4,null,undefined];
+        console.log(arr.join());
+        console.log(arr.join("|"));
+        console.log(arr.join(""));
+        console.log(arr.join(" "));
+        
+        // 数组的join,配合字符串的split可以实现数组与字符串的转换
+        var arr2 = ["hello", "world"];
+        result = arr2.join(" ");
+        console.log(result);
+        console.log(result.split(" "));
+        
+    </script>
+</body>
+</html>

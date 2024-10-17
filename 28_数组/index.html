@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义数组
+        var arr = ["sxt","baizhan","it"];
+
+        // 也可先定义数组再赋值
+        var names = [];
+        names[0] = "iwen";
+        names[1] = "frank";
+        
+        console.log(names);
+
+        var info = [20,"iwen",true];
+        console.log(info);
+        
+        // 多维数组：数组里面嵌套一层数组，称为二维数组
+        var towArr = [100,200,["iwen","frink"]];
+        console.log(towArr);
+
+        // 下标：可以赋值，可以读取
+        var user = ["iwen","ime","frank"];
+        console.log(user[2]);
+        
+        // length属性，有括号的叫方法，没括号叫属性
+        console.log(user.length); 
+
+        // 超出数组长度叫数组越界，返回undefined
+        console.log(user[5]); 
+    </script>
+</body>
+</html>

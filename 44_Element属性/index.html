@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height:200px;
+        } 
+
+        .box1{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="root">hello</div>
+
+    <script>
+        var root = document.getElementById("root");
+        root.id = "roots";
+
+        console.log(root.className);
+        root.className = "box box1";
+
+        // classList对象有下列方法：
+        // add(): 增加一个class
+        console.log(root.classList.add("mybox"));
+
+        // remove()：移除一个class
+        root.classList.remove("mybox");
+
+        // contains()：检查当前元素是否包含某个class
+        if(root.classList.contains("box1")){
+            console.log("有");
+        }else{
+            console.log("没有");
+        }
+
+        // toggle()：将某个class移入或移出当前元素
+        root.classList.toggle("box1");
+        
+        console.log(root.innerHTML); // 不加内容则为读取
+        console.log(root.innerHTML="helloworld");
+
+        console.log(root.innerText="waaawwe");
+
+        // innerHTML可以识别标签，innerText会把标签识别成字符串
+        var str = "<a href='https://www.inasbox.com'>inasbox</a>";
+        root.innerHTML=str;
+        root.innerText=str;
+
+
+    </script>
+</body>
+</html>

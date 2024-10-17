@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对象object是重要的数据类型，对象就是一组“键值对”的集合，是一种无序的符合数据集合
+        
+        // 创建一个对象user, 每一个键名又称为“属性”，键值可以是任何数据类型
+        // 如果一个属性的值为函数，通常这个属性称为“方法”，可以像函数那样调用
+        var user = {
+            name:"itbaizhan",
+            age:13,
+            jobs:["it","sxt"],
+            flag:true,
+            getName:function(){
+                console.log("iven");
+            },
+            container:{
+                frontEnd:"WEB前端",
+                backEnd:["python","java"]
+            }
+
+        }
+
+        // 对象的读取方式： 对象名.属性
+        console.log(user.name);
+        console.log(user.jobs);
+        user.getName();
+
+        // 取对象中数组的每个值
+        for(var i = 0; i < user.jobs.length; i++){
+            console.log(user.jobs[i]);
+        }
+        
+        // 链式调用
+        console.log(user.container.frontEnd);
+        console.log(user.container.backEnd);
+
+        for(i = 0; i<user.container.backEnd.length;i++){
+            console.log(user.container.backEnd[i]);
+        }
+    </script>
+</body>
+</html>

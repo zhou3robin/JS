@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 按照给定规则分割字符串，返回一个由分割出来的子字符串组成的数组
+        var name = "it|sxt|itbaizhan";
+        console.log(name.split('|'));
+
+        // 如果分割规则为空字符串，则返回数组的成员是原字符串的每一个字符
+        var name2 = "s|x|t";
+        console.log(name2.split(""));
+
+        // 如果省略参数，则返回数组的唯一成员就是原字符串
+        console.log(name2.split());
+
+        // split方法可以接受第二个参数，限定返回数组的最大成员数
+        console.log(name.split('|', 2));
+        console.log(name.split('|', 4));
+
+    </script>
+</body>
+</html>

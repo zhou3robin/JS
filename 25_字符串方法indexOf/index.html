@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 用于确定一个字符串在另一个字符串中第一次出现的位置，不存在则返回-1
+        var hello = "helloworld";
+        
+        // 判断上述字符串中是否存在e
+        console.log(hello.indexOf('l'));
+
+        var str1 = "新款宝马3系在外观细节之处进行了改进，也配上环形光耀格栅，车尾还是L形尾灯组和上翘小鸭尾";
+        console.log(str1.indexOf('也配上环形光耀格栅'));
+
+        // indexOf还可以接受第二个参数，表示从该位置开始向后匹配
+        var str2 = 'Thrusday';
+        console.log(str2.indexOf('u',4));  
+
+        // indexOf 一般用法
+        if(str1.indexOf('格栅') > 1){
+            console.log("大卖");
+        }else{
+            console.log('亏本');
+        }
+    </script>
+</body>
+</html>

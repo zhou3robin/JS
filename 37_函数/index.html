@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 
+        function add(){
+            console.log("极加");
+        }
+        add();
+
+
+        function add1(x,y){
+            console.log(x + y);
+        }
+        add1(1,2);
+
+        // 函数名的提升，JavaScript引擎将函数名视同变量名，
+        // 所以用function声明函数时，整个函数会像变量申明一样，
+        // 被提升到代码头部，function可以在最下面
+
+        // 函数返回值：提供两个接口实现与外界的交互，其中参数作为入口，接受外界信息；返回值作为出口，把运算结果反馈给外界
+        // return 后面不能添加任何代码，因为不会执行
+        function getName(name){
+            return name;
+        }
+        var myName = getName("peppp");
+        console.log(myName);
+
+    </script>
+</body>
+</html>
